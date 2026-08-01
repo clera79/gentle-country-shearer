@@ -1,0 +1,19 @@
+@use "../abstracts/variables" as vars;
+
+html {
+    background: vars.$colour-background;
+}
+
+body {
+    // min-height: 100vh;
+    font-family: vars.$font-primary;
+    font-size: 1rem;
+    color: vars.$colour-text;
+    background: vars.$colour-background;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+main {
+    overflow: hidden;
+}

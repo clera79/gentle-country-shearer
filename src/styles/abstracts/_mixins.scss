@@ -1,0 +1,14 @@
+@use "sass:map";
+@use "breakpoints" as bp;
+
+@mixin respond-to($breakpoint) {
+    $value: map.get(bp.$breakpoints, $breakpoint);
+
+    @if $value {
+        @media (max-width: $value) {
+            @content;
+        }
+    } @else {
+        @error "Unknown breakpoint: #{$breakpoint}.";
+    }
+}

@@ -1,0 +1,411 @@
+@use "../abstracts/variables" as *;
+
+.contact {
+    overflow: hidden;
+
+    padding-block: $section-padding;
+
+    background-color: $colour-section;
+
+    &__inner {
+        display: grid;
+        grid-template-columns:
+            minmax(16rem, 0.85fr)
+            minmax(24rem, 1.2fr)
+            minmax(18rem, 30%);
+        align-items: stretch;
+        gap: 4.5rem;
+
+        padding-left: 1.5rem;
+    }
+
+    &__information {
+        align-self: stretch;
+
+        min-width: 0;
+        padding-right: 3.5rem;
+
+        border-right: 1px solid $colour-border;
+    }
+
+    &__header {
+        h2 {
+            margin-bottom: 0;
+            font-size: 2.5rem;
+        }
+    }
+
+    &__divider {
+        display: block;
+
+        width: 7rem;
+        max-width: 100%;
+        height: auto;
+        margin-block: 1rem 1.5rem;
+    }
+
+    &__details {
+        min-width: 0;
+    }
+
+    &__intro {
+        max-width: 28rem;
+        margin-bottom: 1.75rem;
+
+        color: $colour-secondary;
+        line-height: 1.65;
+    }
+
+    &__list {
+        display: grid;
+        gap: 1rem;
+
+        margin: 0;
+        padding: 0;
+
+        list-style: none;
+    }
+
+    &__item {
+        display: grid;
+        grid-template-columns: 2.25rem minmax(0, 1fr);
+        align-items: center;
+        gap: 0.875rem;
+
+        min-width: 0;
+
+        color: $colour-text;
+
+        a {
+            width: fit-content;
+            max-width: 100%;
+
+            color: inherit;
+            text-decoration: none;
+            overflow-wrap: anywhere;
+
+            transition: color 160ms ease;
+
+            &:hover,
+            &:focus-visible {
+                color: $colour-accent;
+            }
+        }
+
+        &--location {
+            align-items: start;
+
+            span:last-child {
+                padding-top: 0.25rem;
+                line-height: 1.55;
+            }
+        }
+    }
+
+    &__icon {
+        display: grid;
+        place-items: center;
+
+        width: 2.25rem;
+        height: 2.25rem;
+
+        color: $colour-white;
+
+        background-color: $colour-accent;
+        border-radius: $border-radius-large;
+
+        svg {
+            width: 1.2rem;
+            height: 1.2rem;
+        }
+    }
+
+    &__form {
+        display: grid;
+        align-self: start;
+        gap: 1.15rem;
+
+        min-width: 0;
+    }
+
+    &__field {
+        display: grid;
+        gap: 0.35rem;
+
+        label {
+            color: $colour-text;
+            font-size: 0.9rem;
+            font-weight: 600;
+            line-height: 1.3;
+        }
+
+        input,
+        textarea {
+            display: block;
+
+            width: 100%;
+
+            color: $colour-text;
+            font: inherit;
+
+            background-color: rgba($colour-white, 0.68);
+            border: 1px solid rgba($colour-border, 0.95);
+            border-radius: $border-radius;
+
+            box-shadow: 0 1px 2px rgba(46, 48, 37, 0.04);
+
+            transition:
+                background-color 160ms ease,
+                border-color 160ms ease,
+                box-shadow 160ms ease;
+
+            &:hover {
+                background-color: rgba($colour-white, 0.82);
+            }
+
+            &:focus {
+                outline: none;
+
+                background-color: $colour-white;
+                border-color: $colour-accent;
+
+                box-shadow:
+                    0 0 0 3px rgba($colour-accent, 0.14),
+                    0 1px 2px rgba(46, 48, 37, 0.05);
+            }
+        }
+
+        input {
+            min-height: 2.8rem;
+            padding: 0.55rem 1rem;
+        }
+
+        textarea {
+            min-height: 10rem;
+            padding: 0.75rem 1rem;
+
+            line-height: 1.55;
+            resize: vertical;
+        }
+    }
+
+    &__honeypot {
+        position: absolute;
+
+        width: 1px;
+        height: 1px;
+
+        overflow: hidden;
+
+        clip: rect(0 0 0 0);
+        clip-path: inset(50%);
+        white-space: nowrap;
+    }
+
+    &__submit {
+        justify-self: start;
+
+        min-width: 13rem;
+        min-height: 3.2rem;
+        padding: 0.75rem 1.75rem;
+
+        color: $colour-white;
+        font: inherit;
+        font-weight: 600;
+
+        cursor: pointer;
+
+        background-color: $colour-accent;
+        border: 1px solid $colour-accent;
+        border-radius: $border-radius;
+
+        transition:
+            background-color 160ms ease,
+            border-color 160ms ease,
+            transform 160ms ease;
+
+        &:hover {
+            background-color: $colour-accent-dark;
+            border-color: $colour-accent-dark;
+        }
+
+        &:focus-visible {
+            outline: 3px solid rgba($colour-accent, 0.28);
+            outline-offset: 3px;
+        }
+
+        &:active {
+            transform: translateY(1px);
+        }
+    }
+
+    &__image {
+        position: relative;
+
+        align-self: stretch;
+
+        min-width: 0;
+        min-height: 0;
+        overflow: hidden;
+
+        border-radius: $border-radius 0 0 $border-radius;
+
+        &::before {
+            content: "";
+
+            position: absolute;
+            inset-block: 0;
+            left: 0;
+            z-index: 1;
+
+            width: 5rem;
+
+            pointer-events: none;
+
+            background: linear-gradient(
+                to right,
+                $colour-section 0%,
+                rgba($colour-section, 0.72) 30%,
+                rgba($colour-section, 0) 100%
+            );
+        }
+
+        img {
+            position: absolute;
+            inset: 0;
+
+            display: block;
+
+            width: 100%;
+            height: 100%;
+
+            object-fit: cover;
+            object-position: 52% top;
+        }
+    }
+
+    // Tablet
+    @media (max-width: 1099px) {
+        &__inner {
+            grid-template-columns:
+                minmax(0, 1.35fr)
+                minmax(15rem, 0.85fr);
+            column-gap: 3rem;
+            row-gap: 0;
+
+            width: min(100% - 3rem, $container-width);
+            margin-inline: auto;
+            padding-left: 0;
+        }
+
+        &__information {
+            grid-column: 1 / -1;
+
+            margin-bottom: 3rem;
+            padding-right: 0;
+
+            border-right: 0;
+        }
+
+        &__divider {
+            margin-bottom: 3rem;
+        }
+
+        &__intro {
+            max-width: 46rem;
+            margin-bottom: 2rem;
+        }
+
+        &__details {
+            max-width: 52rem;
+        }
+
+        &__form {
+            grid-column: 1;
+            align-self: start;
+        }
+
+        &__image {
+            grid-column: 2;
+            align-self: stretch;
+
+            min-height: 0;
+
+            border-radius: $border-radius;
+
+            &::before {
+                width: 3rem;
+            }
+        }
+    }
+
+    // Narrow tablet
+    @media (max-width: 699px) {
+        &__inner {
+            grid-template-columns: 1fr;
+            gap: 3rem;
+
+            max-width: 40rem;
+        }
+
+        &__information {
+            grid-column: 1;
+
+            margin-bottom: 0;
+            padding: 0;
+
+            border: 0;
+        }
+
+        &__details {
+            max-width: none;
+        }
+
+        &__list {
+            gap: 1rem;
+            margin-bottom: 0;
+        }
+
+        &__form {
+            grid-column: 1;
+        }
+
+        &__image {
+            display: block;
+            grid-column: 1;
+
+            height: 42rem;
+
+            overflow: hidden;
+
+            border-radius: $border-radius;
+
+            &::before {
+                display: none;
+            }
+
+            img {
+                object-position: center top;
+            }
+        }
+    }
+
+    // Phone
+    @media (max-width: 515px) {
+        padding-block: 4.5rem;
+
+        &__inner {
+            width: min(100% - 2rem, $container-width);
+        }
+
+        &__image {
+            height: 24rem;
+        }
+
+        &__submit {
+            justify-self: stretch;
+
+            width: 100%;
+        }
+    }
+}

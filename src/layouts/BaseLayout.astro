@@ -1,0 +1,46 @@
+---
+import Header from "../components/Header.astro";
+
+import "@fontsource/inter/400.css";
+import "@fontsource/inter/500.css";
+import "@fontsource/inter/600.css";
+import "@fontsource/inter/700.css";
+
+
+import "../styles/global.scss";
+
+interface Props {
+    title?: string;
+    description?: string;
+}
+
+const {
+    title = "The Gentle Country Shearer",
+    description = "Calm, experienced sheep and alpaca shearing around Sydney, throughout NSW and interstate."
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width"
+        />
+        <meta
+            name="description"
+            content={description}
+        />
+        <title>{title}</title>
+    </head>
+
+    <body>
+        <Header />
+
+        <main>
+            <slot />
+        </main>
+    </body>
+    
+</html>

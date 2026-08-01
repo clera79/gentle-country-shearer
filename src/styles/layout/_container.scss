@@ -1,0 +1,17 @@
+@use "../abstracts/variables" as vars;
+
+.container {
+    width: min(
+        calc(100% - 3rem),
+        vars.$container-width
+    );
+    margin-inline: auto;
+}
+
+.container-wide {
+    width: min(
+        calc(100% - 3rem),
+        1440ox
+    );
+    margin-inline: auto;
+}

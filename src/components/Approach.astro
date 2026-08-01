@@ -1,0 +1,78 @@
+---
+import { Image } from "astro:assets";
+
+import Divider from "../assets/images/leaf-divider.png";
+import GscShearing from "../assets/images/gsc-shearing.jpg";
+---
+
+<section class="approach" id="approach">
+    <div class="container">
+        <div class="approach__header">
+            <h2>Skill, Care and Professionalism</h2>
+            <!-- <h2>A Calm, Caring Approach</h2> -->
+            <img
+                src={Divider.src}
+                alt=""
+                class="approach__divider"
+            />
+        </div>
+
+        <div class="approach__content">
+            <div class="approach__left">
+                <div class="approach__text">
+                    <p>
+                        <!-- Every animal is handled calmly, patiently, and with respect. -->
+                        Professional shearing combines technical skill and expertise with calm,
+                        patient, and respectful animal handling.
+                    </p>
+
+                    <p>
+                        The Gentle Country Shearer is committed to providing quality shearing while
+                        keeping stress to a minimum for both animals and owners.
+                    </p>
+                </div>
+
+                <div class="approach__highlights">
+                    <div class="approach__highlight">
+                        <img
+                            src="/images/icons/hand.svg"
+                            alt=""
+                            aria-hidden="true"
+                        />
+
+                        <p>Quiet hands</p>
+                    </div>
+
+                    <div class="approach__highlight">
+                        <img
+                            src="/images/icons/shears.svg"
+                            alt=""
+                            aria-hidden="true"
+                        />
+
+                        <p>Skilled shearing</p>
+                    </div>
+
+                    <div class="approach__highlight">
+                        <img
+                            src="/images/icons/heart.svg"
+                            alt=""
+                            aria-hidden="true"
+                        />
+
+                        <p>Genuine country care</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="approach__image">
+                <Image
+                    src={GscShearing}
+                    alt="Calm sheep handling during shearing."
+                    widths={[500, 800, 1200]}
+                    sizes="(max-width: 515px) 80vw, (max-width: 899px) 40vw, 35vw"
+                />
+            </div>
+        </div>
+    </div>
+</section>

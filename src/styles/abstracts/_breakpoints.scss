@@ -1,0 +1,9 @@
+$mobile: 515px;
+$tablet: 1230px;
+$small-laptop: 1320px;
+
+$breakpoints: (
+    mobile: $mobile,
+    tablet: $tablet,
+    small-laptop: $small-laptop,
+);

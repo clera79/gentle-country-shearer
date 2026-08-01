@@ -1,0 +1,203 @@
+---
+import logo from "../assets/images/gsc-logo.svg";
+---
+
+<header class="site-header">
+    <div class="site-header__inner">
+        <a
+            class="site-header__logo"
+            href="/"
+            aria-label="The Gentle Country Shearer Home"
+        >
+            <img
+                src={logo.src}
+                alt="The Gentle Country Shearer"
+                width={logo.width}
+                height={logo.height}
+            />
+        </a>
+
+        <button
+            class="site-header__menu-button"
+            type="button"
+            aria-expanded="false"
+            aria-controls="primary-navigation"
+            aria-label="Open menu"
+        >
+            <span class="site-header__menu-line"></span>
+            <span class="site-header__menu-line"></span>
+            <span class="site-header__menu-line"></span>
+        </button>
+
+        <nav
+            id="primary-navigation"
+            class="site-header__nav"
+            aria-label="Primary navigation"
+        >
+            <ul class="site-header__nav-list">
+                <li>
+                    <a class="site-header__nav-link" href="/">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a class="site-header__nav-link" href="/#about">
+                        About
+                    </a>
+                </li>
+
+                <li>
+                    <a class="site-header__nav-link" href="/#services">
+                        Services
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        class="site-header__nav-link site-header__nav-link--contact"
+                        href="/#contact"
+                    >
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<script>
+    const header = document.querySelector<HTMLElement>(".site-header");
+    const toggle = document.querySelector<HTMLButtonElement>(
+        ".site-header__menu-button"
+    );
+    const nav = document.querySelector<HTMLElement>(".site-header__nav");
+    const menu = document.querySelector<HTMLElement>(
+        ".site-header__nav-list"
+    );
+    const links = document.querySelectorAll<HTMLAnchorElement>(
+        ".site-header__nav-link"
+    );
+
+    if (header && toggle && nav && menu) {
+        let startY = 0;
+        let isDragging = false;
+
+        const isMenuOpen = () => {
+            return toggle.getAttribute("aria-expanded") === "true";
+        };
+
+        const handleTouchStart = (event: TouchEvent) => {
+            if (!isMenuOpen()) {
+                return;
+            }
+
+            startY = event.touches[0].clientY;
+            isDragging = true;
+
+            menu.style.transition = "none";
+        };
+
+        const handleTouchMove = (event: TouchEvent) => {
+            if (!isDragging || !isMenuOpen()) {
+                return;
+            }
+
+            const currentY = event.touches[0].clientY;
+            const deltaY = currentY - startY;
+
+            if (deltaY > 0) {
+                event.preventDefault();
+
+                const elasticPull = Math.pow(deltaY, 0.78);
+
+                menu.style.transform = `translateY(${elasticPull}px)`;
+            }
+        };
+
+        const handleTouchEnd = () => {
+            if (!isDragging) {
+                return;
+            }
+
+            isDragging = false;
+
+            menu.style.transition =
+                "transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275)";
+
+            menu.style.transform = "translateY(0)";
+        };
+
+        const openMenu = () => {
+            toggle.setAttribute("aria-expanded", "true");
+            toggle.setAttribute("aria-label", "Close menu");
+
+            header.classList.add("is-open");
+            document.body.classList.add("menu-open");
+
+            menu.style.transform = "translateY(0)";
+            menu.style.transition = "";
+
+            nav.addEventListener("touchstart", handleTouchStart, {
+                passive: true
+            });
+
+            nav.addEventListener("touchmove", handleTouchMove, {
+                passive: false
+            });
+
+            nav.addEventListener("touchend", handleTouchEnd, {
+                passive: true
+            });
+        };
+
+        const closeMenu = () => {
+            toggle.setAttribute("aria-expanded", "false");
+            toggle.setAttribute("aria-label", "Open menu");
+
+            header.classList.remove("is-open");
+            document.body.classList.remove("menu-open");
+
+            menu.style.transform = "";
+            menu.style.transition = "";
+
+            nav.removeEventListener("touchstart", handleTouchStart);
+            nav.removeEventListener("touchmove", handleTouchMove);
+            nav.removeEventListener("touchend", handleTouchEnd);
+        };
+
+        toggle.addEventListener("click", () => {
+            if (isMenuOpen()) {
+                closeMenu();
+            } else {
+                openMenu();
+            }
+        });
+
+        links.forEach((link) => {
+            link.addEventListener("click", closeMenu);
+        });
+
+        document.addEventListener("keydown", (event) => {
+            if (event.key === "Escape" && isMenuOpen()) {
+                closeMenu();
+                toggle.focus();
+            }
+        });
+
+        window.addEventListener("pageshow", () => {
+            header.classList.add("is-restoring");
+            closeMenu();
+
+            requestAnimationFrame(() => {
+                header.classList.remove("is-restoring");
+            });
+        });
+
+        window.addEventListener("resize", () => {
+            if (window.innerWidth > 515 && isMenuOpen()) {
+                closeMenu();
+            }
+        });
+    }
+</script>

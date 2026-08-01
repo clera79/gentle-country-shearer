@@ -1,0 +1,40 @@
+// Colours
+
+$colour-background: #F6F0E8; // Main background (warmer wool)
+$colour-surface: #FBF7F1; // Cards / white sections
+$colour-section: #EFE5D7; // Alternate sections
+
+$colour-text: #2E3025; // Deep olive charcoal
+$colour-secondary: #666456; // Weathered taupe
+
+$colour-accent: #59643A; // Eucalyptus olive
+$colour-accent-dark: #444E2C; // Dark eucalyptus
+
+$colour-border: #D9D4C7; // Natural linen
+
+$colour-white: #FFFFFF; // Pure white
+
+// Typography
+
+$font-primary: "Inter", sans-serif;
+$font-heading: Georgia, "Times New Roman", serif;
+
+// Layout
+
+$container-width: 1180px; // 1440px
+$section-padding: 6rem;
+
+// Border radius
+
+$border-radius-small: 0.375rem;
+$border-radius: 0.5rem;
+$border-radius-large: 9999px;
+
+// Shadows
+
+$shadow-small: 0 0.125rem 0.5rem rgba(46, 48, 37, 0.08);
+$shadow-medium: 0 0.375rem 1rem rgba(46, 48, 37, 0.12);
+
+// Transitions
+
+$transition: 180ms ease;

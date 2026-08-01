@@ -1,0 +1,91 @@
+---
+import divider from "../assets/images/leaf-divider.png";
+
+const services = [
+    {
+        icon: "/images/icons/shearing.svg",
+        title: "Sheep & Alpaca Shearing",
+        description:
+            "Skilled, calm and careful shearing focused on the comfort and wellbeing of your animals"
+    },
+    {
+        icon: "/images/icons/husbandry.svg",
+        title: "Additional Animal Husbandry Services",
+        list: [
+            "Drenching and routine flock care",
+            "Hoof trimming and foot care",
+            "Crutching",
+            "Wool handling and fleece management",
+            "General animal husbandry assistance"
+        ]
+    },
+    {
+        icon: "/images/icons/hobby-farms.svg",
+        title: "Small Flocks & Hobby Farms",
+        description:
+            "Specialising in small flocks, hobby farms, and lifestyle properties where individual care and reliability matter"
+    }
+];
+---
+
+<section class="services" id="services">
+    <div class="container">
+        <header class="services__header">
+            <h2>Services</h2>
+
+            <img
+                src={divider.src}
+                alt=""
+                class="services__divider"
+                aria-hidden="true"
+            />
+        </header>
+
+        <div class="services__grid">
+            {services.map((service) => (
+                <article class="services__card">
+                    <div class="services__icon">
+                        <img src={service.icon} alt="" aria-hidden="true" />
+                    </div>
+
+                    <h3>{service.title}</h3>
+
+                    {service.description && (
+                        <p>{service.description}</p>
+                    )}
+
+                    {service.list && (
+                        <ul>
+                            {service.list.map((item) => (
+                                <li>{item}</li>
+                            ))}
+                        </ul>
+                    )}
+                </article>
+            ))}
+        </div>
+    </div>
+</section>
+
+<script>
+    const equaliseServiceCards = () => {
+        const cards = document.querySelectorAll<HTMLElement>(".services__card");
+
+        cards.forEach((card) => {
+            card.style.height = "auto";
+        });
+
+        const tallestHeight = Math.max(
+            ...Array.from(cards, (card) => card.offsetHeight)
+        );
+
+        cards.forEach((card) => {
+            card.style.height = `${tallestHeight}px`;
+        });
+    };
+
+    equaliseServiceCards();
+
+    const resizeObserver = new ResizeObserver(equaliseServiceCards);
+    resizeObserver.observe(document.documentElement);
+</script>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 1211 194" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g transform="matrix(0.991736,0,0,0.991736,-4.796464,-306.229995)">
+        <g id="Right-Rule" serif:id="Right Rule" transform="matrix(0.581081,0,0,1,900.414289,2.571528)">
+            <path d="M319.124,343.942L59.854,343.942" style="fill:none;stroke:black;stroke-width:1.85px;"/>
+        </g>
+        <g id="Left-Rule" serif:id="Left Rule" transform="matrix(0.581081,0,0,1,91.730956,2.571528)">
+            <path d="M319.124,343.942L59.854,343.942" style="fill:none;stroke:black;stroke-width:1.85px;"/>
+        </g>
+    </g>
+    <g id="Wordmark" transform="matrix(0.990421,0,0,0.991736,-523.398473,-305.227394)">
+        <g transform="matrix(1.001327,0,0,1,-1.098944,0)">
+            <text x="827.92px" y="373.723px" style="font-family:'CormorantGaramond-Regular', 'Cormorant Garamond';font-size:90.75px;fill:rgb(43,31,26);">T<tspan x="892.716px 968.855px 1024.848px 1053.343px 1125.308px 1181.301px 1254.536px 1319.332px 1374.961px " y="373.723px 373.723px 373.723px 373.723px 373.723px 373.723px 373.723px 373.723px 373.723px ">HE GENTLE</tspan></text>
+        </g>
+        <g transform="matrix(1.001327,0,0,1,-0.703355,0)">
+            <text x="529.893px" y="494.723px" style="font-family:'CormorantGaramond-Regular', 'Cormorant Garamond';font-size:150px;fill:rgb(43,31,26);">C</text>
+        </g>
+        <g transform="matrix(1.001327,0,0,1,-0.844109,0)">
+            <text x="635.933px" y="494.723px" style="font-family:'CormorantGaramond-Regular', 'Cormorant Garamond';font-size:120px;fill:rgb(43,31,26);">O<tspan x="730.253px 816.413px 906.053px 984.533px 1060.742px " y="494.723px 494.723px 494.723px 494.723px 494.723px ">UNTRY</tspan></text>
+        </g>
+        <g transform="matrix(1.001327,0,0,1,-1.549563,0)">
+            <text x="1167.407px" y="494.723px" style="font-family:'CormorantGaramond-Regular', 'Cormorant Garamond';font-size:150px;fill:rgb(43,31,26);">S</text>
+        </g>
+        <g transform="matrix(1.001327,0,0,1,-1.651439,0)">
+            <g transform="matrix(120,0,0,120,1721.878657,494.722628)">
+            </g>
+            <text x="1244.159px" y="494.723px" style="font-family:'CormorantGaramond-Regular', 'Cormorant Garamond';font-size:120px;fill:rgb(43,31,26);">H<tspan x="1337.639px 1404.479px 1491.119px 1574.279px 1641.119px " y="494.723px 494.723px 494.723px 494.723px 494.723px ">EARER</tspan></text>
+        </g>
+    </g>
+</svg>

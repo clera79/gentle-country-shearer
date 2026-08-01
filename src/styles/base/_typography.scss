@@ -1,0 +1,47 @@
+@use "../abstracts/variables" as vars;
+@use "../abstracts/mixins" as mixins;
+
+h1,
+h2,
+h3 {
+    line-height: 1.15;
+}
+
+h1 {
+    font-size: 5rem;
+    font-weight: 700;
+
+    @include mixins.respond-to(tablet) {
+        font-size: 4rem;
+    }
+
+    @include mixins.respond-to(mobile) {
+        font-size: 2.5rem;
+    }
+}
+
+h2 {
+    font-size: 3.5rem;
+    font-weight: 700;
+
+    @include mixins.respond-to(tablet) {
+        font-size: 3rem;
+    }
+
+    @include mixins.respond-to(mobile) {
+        font-size: 2.25rem;
+    }
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+p {
+    line-height: 1.7;
+}
+
+strong {
+    font-weight: 600;
+}
