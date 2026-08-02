@@ -4,6 +4,10 @@ body.menu-open {
     overflow: hidden;
 }
 
+.site-header__logo img {
+    outline: 1px solid red;
+}
+
 .site-header {
     position: relative;
     z-index: 10;
