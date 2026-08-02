@@ -10,7 +10,18 @@ body.menu-open {
 
     background-color: $colour-surface;
 
-    padding-top: env(safe-area-inset-top);
+    &::before {
+        content: "";
+
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 100%;
+
+        height: env(safe-area-inset-top);
+
+        background-color: $colour-surface;
+    }
     // border-bottom: 1px solid $colour-border;
 
     &__inner {
