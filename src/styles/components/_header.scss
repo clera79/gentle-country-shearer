@@ -9,6 +9,8 @@ body.menu-open {
     z-index: 10;
 
     background-color: $colour-surface;
+
+    padding-top: env(safe-area-inset-top);
     // border-bottom: 1px solid $colour-border;
 
     &__inner {
