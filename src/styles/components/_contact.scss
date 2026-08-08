@@ -81,7 +81,7 @@
         max-width: 100%;
 
         color: inherit;
-        text-decoration: none;
+        text-decoration: none; // Change to "underline" when email address is ready
         text-decoration-thickness: 1px;
         text-underline-offset: 0.2em;
         overflow-wrap: anywhere;
@@ -93,6 +93,7 @@
             color: $colour-accent;
         }
 
+        // Delete the below ".phone-link" section (and remove class from HTML) when email address ready
         &.phone-link {
             color: inherit;
             text-decoration: underline;
