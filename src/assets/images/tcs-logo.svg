@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="100%" height="100%" viewBox="0 0 1223 185" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
-    <g transform="matrix(1.803082,0,0,0.991736,-112.03895,-318.303555)">
-        <g id="Right-Rule" serif:id="Right Rule" transform="matrix(0.581081,0,0,1,467.244803,2.571528)">
-            <path d="M319.124,343.942L59.854,343.942" style="fill:none;stroke:black;stroke-width:1.47px;"/>
+<svg width="100%" height="100%" viewBox="0 0 1223 191" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g transform="matrix(1.803082,0,0,0.991736,-105.960425,-314.792167)">
+        <g id="Right-Rule" serif:id="Right Rule" transform="matrix(0.491994,0,0,1,464.68402,2.571528)">
+            <path d="M319.124,343.942L59.854,343.942" style="fill:none;stroke:black;stroke-width:1.59px;"/>
         </g>
-        <g id="Left-Rule" serif:id="Left Rule" transform="matrix(0.581081,0,0,1,91.730956,2.571528)">
-            <path d="M319.124,343.942L59.854,343.942" style="fill:none;stroke:black;stroke-width:1.47px;"/>
+        <g id="Left-Rule" serif:id="Left Rule" transform="matrix(0.491994,0,0,1,118.055381,2.571528)">
+            <path d="M319.124,343.942L59.854,343.942" style="fill:none;stroke:black;stroke-width:1.59px;"/>
         </g>
     </g>
-    <g id="Wordmark" transform="matrix(0.990421,0,0,0.991736,-526.238411,-315.037394)">
-        <g transform="matrix(1.011341,0,0,1,-11.865453,0)">
-            <text x="1046.278px" y="373.723px" style="font-family:'CormorantGaramond-Regular', 'Cormorant Garamond';font-size:75.625px;fill:rgb(43,31,26);">T<tspan x="1100.275px 1163.724px " y="373.723px 373.723px ">HE</tspan></text>
+    <g id="Wordmark" transform="matrix(0.990421,0,0,0.991736,-526.238411,-315.044011)">
+        <g transform="matrix(1.011341,0,0,1,-11.744601,0)">
+            <text x="1035.622px" y="373.723px" style="font-family:'CormorantGaramond-Regular', 'Cormorant Garamond';font-size:85.708px;fill:rgb(43,31,26);">T<tspan x="1096.817px 1168.727px " y="373.723px 373.723px ">HE</tspan></text>
         </g>
         <g transform="matrix(1.011341,0,0,1,-5.941295,0)">
             <text x="523.895px" y="494.723px" style="font-family:'CormorantGaramond-Regular', 'Cormorant Garamond';font-size:150px;fill:rgb(43,31,26);">C</text>
