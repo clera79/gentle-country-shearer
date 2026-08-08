@@ -44,7 +44,7 @@
     margin: 0;
     color: vars.$colour-white;
     font-family: vars.$font-heading;
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: 700;
     line-height: 1.05;
     margin-bottom: 2rem;
@@ -53,11 +53,11 @@
 .hero__divider {
     width: 10rem;
     height: auto;
-    margin: 1.5rem 0 1.75rem;
+    margin: 0rem 0 1.75rem;
 }
 
 .hero__intro {
-    margin: 2rem 0 2.5rem;
+    margin: 8rem 0 2.5rem;
     color: vars.$colour-white;
     font-size: 1.25rem;
     line-height: 1.7;
@@ -105,12 +105,13 @@
     
     .hero__title {
         max-width: 45ch;
-        font-size: 2.75rem;
+        font-size: 2.65rem;
+        margin-top: 0.75rem;
     }
 
     .hero__intro {
         max-width: 37ch;
-        margin-top: 12rem;
+        margin-top: 14rem;
         font-size: 1.3rem;
     }
 

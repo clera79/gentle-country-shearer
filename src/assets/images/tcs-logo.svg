@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 1223 185" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g transform="matrix(1.803082,0,0,0.991736,-112.03895,-318.303555)">
+        <g id="Right-Rule" serif:id="Right Rule" transform="matrix(0.581081,0,0,1,467.244803,2.571528)">
+            <path d="M319.124,343.942L59.854,343.942" style="fill:none;stroke:black;stroke-width:1.47px;"/>
+        </g>
+        <g id="Left-Rule" serif:id="Left Rule" transform="matrix(0.581081,0,0,1,91.730956,2.571528)">
+            <path d="M319.124,343.942L59.854,343.942" style="fill:none;stroke:black;stroke-width:1.47px;"/>
+        </g>
+    </g>
+    <g id="Wordmark" transform="matrix(0.990421,0,0,0.991736,-526.238411,-315.037394)">
+        <g transform="matrix(1.011341,0,0,1,-11.865453,0)">
+            <text x="1046.278px" y="373.723px" style="font-family:'CormorantGaramond-Regular', 'Cormorant Garamond';font-size:75.625px;fill:rgb(43,31,26);">T<tspan x="1100.275px 1163.724px " y="373.723px 373.723px ">HE</tspan></text>
+        </g>
+        <g transform="matrix(1.011341,0,0,1,-5.941295,0)">
+            <text x="523.895px" y="494.723px" style="font-family:'CormorantGaramond-Regular', 'Cormorant Garamond';font-size:150px;fill:rgb(43,31,26);">C</text>
+        </g>
+        <g transform="matrix(1.011341,0,0,1,-7.155887,0)">
+            <text x="630.996px" y="494.723px" style="font-family:'CormorantGaramond-Regular', 'Cormorant Garamond';font-size:120px;fill:rgb(43,31,26);">O<tspan x="725.316px 811.476px 901.116px 979.596px 1055.874px " y="494.723px 494.723px 494.723px 494.723px 494.723px ">UNTRY</tspan></text>
+        </g>
+        <g transform="matrix(1.011341,0,0,1,-13.244195,0)">
+            <text x="1167.854px" y="494.723px" style="font-family:'CormorantGaramond-Regular', 'Cormorant Garamond';font-size:150px;fill:rgb(43,31,26);">S</text>
+        </g>
+        <g transform="matrix(1.011341,0,0,1,-14.123312,0)">
+            <g transform="matrix(120,0,0,120,1723.093017,494.722628)">
+            </g>
+            <text x="1245.373px" y="494.723px" style="font-family:'CormorantGaramond-Regular', 'Cormorant Garamond';font-size:120px;fill:rgb(43,31,26);">H<tspan x="1338.853px 1405.693px 1492.333px 1575.493px 1642.333px " y="494.723px 494.723px 494.723px 494.723px 494.723px ">EARER</tspan></text>
+        </g>
+    </g>
+</svg>

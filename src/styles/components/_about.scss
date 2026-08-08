@@ -123,6 +123,18 @@
         }
     }
 
+    &__image-caption {
+        width: 325px;
+        margin: 0.75rem 0 0;
+
+        color: $colour-secondary;
+
+        font-size: 0.9375rem;
+        font-weight: 400;
+        line-height: 1.4;
+        text-align: center;
+    }
+
     &__social {
         display: flex;
         align-items: center;
@@ -173,7 +185,6 @@
     }
 }
 
-
 /* =============================================================================
    RESPONSIVE
 ============================================================================= */
@@ -186,6 +197,10 @@
         }
 
         &__image img {
+            width: 100%;
+        }
+
+        &__image-caption {
             width: 100%;
         }
     }
